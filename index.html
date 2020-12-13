@@ -18,7 +18,19 @@
 
     <!-- NEED: column for city search -->
     <div class="container">
-
+        <div class="row">
+            <div class="col-4 bg-light">
+                <p class="search-header my-1">Enter a City to get the forecast:</p>
+                <div class="input-group mb-3">
+                    <input id="city-input" type="text" class="form-control" aria-label="Enter a city name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <form id="history"></form>
+            </div>
     </div>
 
     <!-- NEED: section/column for current location weather -->
