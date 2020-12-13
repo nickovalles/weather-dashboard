@@ -4,6 +4,7 @@ const cityNameEl = document.getElementById("city-name");
 const cityEntryEl = document.getElementById("city-entry");
 const currentTempEl = document.getElementById("temperature");
 const currentHumidityEl = document.getElementById("humidity");
+const historyE1 = document.getElementById("history");
 const currentWindEl = document.getElementById("wind-speed");
 const currentUVEl = document.getElementById("UV-index");
 var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
@@ -88,7 +89,29 @@ searchButtonEl.addEventListener("click", function() {
     getWeather(searchTerm);
     searchHistory.push(searchTerm);
     localStorage.setItem("search", JSON.stringify(searchHistory));
-})
 
 
 // Create Search History, button?
+
+getSearchHistory();
+})
+
+function getSearchHistory() {
+    historyEl.innerHTML = "";
+    for (let i = 0; i < searchHistory.length; i++) {
+        const historySelect = document.createElement("input");
+            historySelect.setAttribute("type","text");
+            historySelect.setAttribute("readonly",true);
+            historySelect.setAttribute("class", "form-control d-block bg-white");
+            historySelect.setAttribute("value", searchHistory[i]);
+            historySelect.addEventListener("click",function() {
+                getWeather(historySelect.value);
+            })
+            historyEl.append(historySelect);
+    }
+}
+
+getSearchHistory();
+if (searchHistory.length > 0) {
+    getWeather(searchHistory[searchHistory.length - 1]);
+}
