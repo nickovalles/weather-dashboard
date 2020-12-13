@@ -18,9 +18,10 @@
 
     <!-- NEED: column for city search -->
     <div class="container">
+
         <div class="row">
             <div class="col-4 bg-light">
-                <p class="search-header my-1">Enter a City to get the forecast:</p>
+                <p class="search-header my-1">Search for a City:</p>
                 <div class="input-group mb-3">
                     <input id="city-entry" type="text" class="form-control" aria-label="Enter a city name">
                     <div class="input-group-append">
@@ -31,48 +32,44 @@
                 </div>
                 <form id="history"></form>
             </div>
-    </div>
 
-    <!-- NEED: section/column for current location weather -->
+            <!--Add column -> display-->
+            <div class="col-8">
+                <div class="row mr-0">
+                    <div class="col-12 border border-gray m-3 rounded">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 id="city-name" class="city-name align-middle"></h2>
+                                <img id="current-img">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="temperature"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="humidity"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="wind-speed"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <p id="UV-index"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="col-8">
-        <div class="row mr-0">
-            <div class="col-12 border border-gray m-3 rounded">
+                <!-- Add another row below to display 5 day forecast-->
                 <div class="row">
                     <div class="col-12">
-                        <span id="city-name" class="city-name align-middle"></span>
-                        <img id="current-img">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p id="temperature"></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p id="humidity"></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p id="wind-speed"></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 d-flex">
-                        <p id="UV-index"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-    <!-- NEED: section for 5 day forecast -->
-
-    <div class="row">
-                    <div class="col-12">
-                        <h3>5-Day Forecast!</h3>
+                        <h3>5-Day Forecast</h3>
                     </div>
                 </div>
                 <div class="row">
