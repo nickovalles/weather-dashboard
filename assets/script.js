@@ -80,8 +80,15 @@ fetch(forecastURL)
 
 // Local Storage, save city
 
-// 5 Day Forecast Request & Display It
 
 // Event Listeners/Search History under nav
+
+searchButtonEl.addEventListener("click", function() { 
+    searchTerm = cityEntryEl.value;
+    getWeather(searchTerm);
+    searchHistory.push(searchTerm);
+    localStorage.setItem("search", JSON.stringify(searchHistory));
+})
+
 
 // Create Search History, button?
