@@ -9,8 +9,20 @@ const currentUVEl = document.getElementById("UV-index");
 var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 console.log(searchHistory);
 
+// API Info 
+const APIKey = "b776531cc2c9f6ed2bb5784b21325065"
+
 
 // Button Click, read form
+function getWeather(cityName) {
+    // Refer https://openweathermap.org/current#name
+    let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid" + APIKey;
+    axios.get(queryURL)
+    .then(function(response) {
+        console.log(response);
+    })
+
+}
 
 // Locate City Name, API
 
