@@ -10,3 +10,14 @@ var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 console.log(searchHistory);
 
 
+// Button Click, read form
+
+// Locate City Name, API
+
+// Local Storage, save city
+
+// 5 Day Forecast Request & Display It
+
+// Event Listeners/Search History under nav
+
+// Create Search History, button?
