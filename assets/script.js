@@ -7,11 +7,10 @@ const currentHumidityEl = document.getElementById("humidity");
 const historyE1 = document.getElementById("history");
 const currentWindEl = document.getElementById("wind-speed");
 const currentUVEl = document.getElementById("UV-index");
-var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
-console.log(searchHistory);
+let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 
 // API Info 
-const APIKey = "b776531cc2c9f6ed2bb5784b21325065";
+const APIKey = "b842b435591c968a7fcf07de7e4f3de5";
 
 
 // Button Click, read form
