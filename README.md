@@ -16,7 +16,7 @@ The site has a codebase that follows accessibility standards so that it is optim
 ![image](/assets/images/weather-dashboard.PNG)Weather Dashboard App Screenshot
 
 
-
+-----
 
 ## Links
 
