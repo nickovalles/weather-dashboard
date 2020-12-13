@@ -1,11 +1,11 @@
-# weather-dashboard
+# Weather-Dashboard-App
 ## Created by Nicolas Ovalles
 
 -----
 
 ## Purpose of Site
 
-The site effectively allows users to plan their days by viewing the current day weather and looking ahead with a 5-day forecast. Features include the ability to view based on city. <br/>
+The site effectively allows users to plan their days by viewing the current day weather and looking ahead with a 5-day forecast. Features include the ability to view based on city. <br/> <br/>
 The site has a codebase that follows accessibility standards so that it is optimized for search engines.   
 
 -----
