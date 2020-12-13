@@ -8,3 +8,5 @@ const currentWindEl = document.getElementById("wind-speed");
 const currentUVEl = document.getElementById("UV-index");
 var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 console.log(searchHistory);
+
+
