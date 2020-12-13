@@ -16,8 +16,8 @@ const APIKey = "b776531cc2c9f6ed2bb5784b21325065";
 // Button Click, read form
 function getWeather(cityName) {
     // Refer https://openweathermap.org/current#name
-    let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid" + APIKey;
-    axios.get(queryURL)
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid" + APIKey;
+    fetch(weatherURL)
     .then(function(response) {
         console.log(response);
     })
